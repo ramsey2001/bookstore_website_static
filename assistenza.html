@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+     <meta charset= "utf-8"/>
+     <meta name="keywords" content="libreria online, libri, libri per univerità, libri scolastici"/>
+     <meta name="description" content="Libreria Online, Sito web di: Segnalibro.it, la tua libreria online"/>
+     <meta name="author" content="Ramona Orsi e Giulia Nebbia"/>
+     <title> Assistenza - Segnalibro.it </title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+     <header>
+       <a href="homepage.html"> <img id="logo" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> </a>
+     </header>
+
+     <nav id="nav1">
+       <ul>
+         <li class="li1"> <a href="carrello.html"> <img class="icone" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello"> Carrello </a>
+           <!-- Numero quanti libri nel carrello --> <span class="badge"> 0 </span> </li>
+         <li class="li1"> <a class="active" href="assistenza.html"> <img class="icone" src="immagini/assistenza.svg" alt="assistenza di Segnalibro.it" title="Assistenza"> Assistenza </a> </li>
+         <li class="li1"> <a href="accedi.html"> <img class="icone" src="immagini/accedi.svg" alt="accedi di Segnalibro.it" title="Accedi"> Accedi </a> </li>
+       </ul>
+     </nav>
+
+     <br/> <br/> <br/> <br/> <br/> <br/>
+
+     <nav id="nav2">
+       <ul>
+         <li class="li2"> <a href="homepage.html" title="Home"> Home </a> </li>
+         <li class="li2"> <a href="chisiamo.html" title="Chi siamo"> Chi siamo </a> </li>
+         <li class="li2"> <a href="contatti.html" title="Contatti"> Contatti </a> </li>
+         <li class="li2"> <a href="eventi.html" title="Eventi"> Eventi </a> </li>
+       </ul>
+     </nav>
+
+     <div id="contenitoreassistenza"> <br/> <br/> <br/> <br/>
+       <article id="articleassistenza">
+         <h2 class="h2ass"> Aiutaci a migliorare il nostro servizio </h2>
+         <p> Le chiediamo cortesemente di compilare questo form anonimo per aiutarci a migliorare il nostro sito e garantire servizi migliori per i nostri clienti.
+           La preghiamo, una volta completato il questionario, di schiacciare  <strong> "Invia". </strong> <br/> <br/> <br/>
+           <strong> Tempo stimato di compilazione: 5 minuti. </strong> <br/> <br/>  </p> <hr/> <br/>
+           <h3 class="h2ass"> QUESTIONARIO </h3>
+
+           <form action="mailto:giulia.nebbia@edu.unito.it" method="post" enctype="text/plain">
+             <fieldset>
+               <legend> Compila i campi vuoti </legend>
+
+               <label for="età"> <Strong> Età </strong> </label> <br/> <hr/>
+               <select id="età" name="eta">
+                 <option value="" selected> - </option>
+                 <option value="Meno di 25"> dai 15 ai 25 anni </option>
+                 <option value="Tra i 18 e i 40"> dai 25 ai 60 anni </option>
+                 <option value="Più di 40"> dai 60 ai 90 anni </option>
+               </select> <hr/> <br/> <br/>
+
+                  <Strong> Ruolo </strong> <br/> <hr/>
+                  <input type="checkbox" id="ruolo1" name="ruolo1" value="Studente">
+                  <label for="ruolo1"> Studente </label>
+                  <input type="checkbox" id="ruolo2" name="ruolo2" value="Insegnante">
+                  <label for="ruolo2"> Insegnante </label>
+                  <input type="checkbox" id="ruolo3" name="ruolo3" value="Lavoratore">
+                  <label for="ruolo3"> Lavoratore </label>
+                  <input type="checkbox" id="ruolo4" name="ruolo3" value="Lavoratore">
+                  <label for="ruolo4"> Pensionato </label> <hr/> <br> <br>
+
+                  <Strong> Sesso </strong> <br/> <hr/>
+                  <input type="radio" id="genere" name="genere" value="F"/>
+                  <label for="genere"> Femmina </label>
+                  <input type="radio" id="genere1" name="genere" value="M"/>
+                  <label for="genere1"> Maschio </label>
+                  <input type="radio" id="genere2" name="genere" value="NS"/>
+                  <label for="genere2"> Non specificato </label> <hr/> <br/> <br/>
+
+                   <Strong> Quale preferisci? </strong> <br/> <hr/>
+                   <input type="radio" id="scegli1" name="scegli" value="E-Book"/>
+                   <label for="scegli1"> E-Book </label>
+                   <input type="radio" id="scegli2" name="scegli" value="Libri cartacei"/>
+                   <label for="scegli2"> Libri cartacei </label>
+                   <input type="radio" id="scegli3" name="scegli" value="Libri cartacei"/>
+                   <label for="scegli3"> Non so cosa siano gli E-Book </label> <hr/> <br/> <br/>
+
+                   <Strong> Ci conoscevi già? </strong> <br/> <hr/>
+                   <input type="radio" id="si" name="genere" value="F"/>
+                   <label for="si"> Sì </label>
+                   <input type="radio" id="no" name="genere" value="M"/>
+                   <label for="no"> No </label> <hr/> <br/> <br/>
+
+                       <Strong> Qual è il tuo genere preferito? </strong> <br/> <hr/>
+                       <input type="checkbox" id="libro1" name="genere preferito" value="Biografia"/>
+                       <label for="libro1"> Biografia </label>
+                        <input type="checkbox" id="libro2" name="genere preferito" value="Fantascienza"/>
+                        <label for="libro2"> Fantascienza </label>
+                        <input type="checkbox" id="libro3" name="genere preferito" value="Thriller"/>
+                        <label for="libro3"> Thriller </label>
+                        <input type="checkbox" id="libro4" name="genere preferito" value="Horror"/>
+                        <label for="libro4"> Horror </label>
+                        <input type="checkbox" id="libro5" name="genere preferito" value="Romanzo"/>
+                        <label for="libro5"> Romanzo </label>
+                        <input type="checkbox" id="libro6" name="genere preferito" value="Psicologico"/>
+                        <label for="libro6"> Psicologico </label>
+                        <input type="checkbox" id="libro7" name="genere preferito" value="Narrativa "/>
+                        <label for="libro7"> Narrativa </label>
+                        <input type="checkbox" id="libro8" name="genere preferito" value="Didattici"/>
+                        <label for="libro8"> Didattici </label> <hr/> <br/> <br/>
+
+                        <h3 class="h2ass"> USABILITÀ DEL SITO ED EFFICIENZA </h3> <br/>
+
+                        <Strong> La navigazione sul nostro sito è semplice e intuitiva </strong> <br/> <hr/>
+                        <input type="radio" id="av1" name="genere" value="F"/>
+                        <label for="av1"> Assolutamente vero </label>
+                        <input type="radio" id="pv1" name="genere" value="M"/>
+                        <label for="pv1"> Piuttosto vero </label>
+                        <input type="radio" id="Normale1" name="genere" value="F"/>
+                        <label for="Normale1"> Normale </label>
+                        <input type="radio" id="pf1" name="genere" value="F"/>
+                        <label for="pf1"> Piuttosto falso </label>
+                        <input type="radio" id="af1" name="genere" value="F"/>
+                        <label for="af1"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> Hai trovato il nostro sito innovativo </strong> <br/> <hr/>
+                        <input type="radio" id="av2" name="genere" value="F"/>
+                        <label for="av2"> Assolutamente vero </label>
+                        <input type="radio" id="pv2" name="genere" value="M"/>
+                        <label for="pv2"> Piuttosto vero </label>
+                        <input type="radio" id="Normale2" name="genere" value="F"/>
+                        <label for="Normale2"> Normale </label>
+                        <input type="radio" id="pf2" name="genere" value="F"/>
+                        <label for="pf2"> Piuttosto falso </label>
+                        <input type="radio" id="af2" name="genere" value="F"/>
+                        <label for="af2"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> La logica del sito è semplice e chiara e so sempre la mia posizione all'interno di esso </strong> <br/> <hr/>
+                        <input type="radio" id="av3" name="genere" value="F"/>
+                        <label for="av3"> Assolutamente vero </label>
+                        <input type="radio" id="pv3" name="genere" value="M"/>
+                        <label for="pv3"> Piuttosto vero </label>
+                        <input type="radio" id="Normale3" name="genere" value="F"/>
+                        <label for="Normale3"> Normale </label>
+                        <input type="radio" id="pf3" name="genere" value="F"/>
+                        <label for="pf3"> Piuttosto falso </label>
+                        <input type="radio" id="af3" name="genere" value="F"/>
+                        <label for="af3"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> Interfaccia grafica e layout sono moderni e benfatti </strong> <br/> <hr/>
+                        <input type="radio" id="av4" name="genere" value="F"/>
+                        <label for="av4"> Assolutamente vero </label>
+                        <input type="radio" id="pv4" name="genere" value="M"/>
+                        <label for="pv4"> Piuttosto vero </label>
+                        <input type="radio" id="Normale4" name="genere" value="F"/>
+                        <label for="Normale4"> Normale </label>
+                        <input type="radio" id="pf4" name="genere" value="F"/>
+                        <label for="pf4"> Piuttosto falso </label>
+                        <input type="radio" id="af4" name="genere" value="F"/>
+                        <label for="af4"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> Interfaccia grafica e layout sono moderni e benfatti </strong> <br/> <hr/>
+                        <input type="radio" id="av5" name="genere" value="F"/>
+                        <label for="av5"> Assolutamente vero </label>
+                        <input type="radio" id="pv5" name="genere" value="M"/>
+                        <label for="pv5"> Piuttosto vero </label>
+                        <input type="radio" id="Normale5" name="genere" value="F"/>
+                        <label for="Normale5"> Normale </label>
+                        <input type="radio" id="pf5" name="genere" value="F"/>
+                        <label for="pf5"> Piuttosto falso </label>
+                        <input type="radio" id="af5" name="genere" value="F"/>
+                        <label for="af5"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                          <h3 class="h2ass"> ESPERIENZA D'ACQUISTO </h3> <br/>
+
+                          <Strong> L'operazione di acquisto è stata intuitiva e affidabile </strong> <br/> <hr/>
+                          <input type="radio" id="av9" name="genere" value="F"/>
+                          <label for="av9"> Assolutamente vero </label>
+                          <input type="radio" id="pv9" name="genere" value="M"/>
+                          <label for="pv9"> Piuttosto vero </label>
+                          <input type="radio" id="Normale9" name="genere" value="F"/>
+                          <label for="Normale9"> Normale </label>
+                          <input type="radio" id="pf9" name="genere" value="F"/>
+                          <label for="pf9"> Piuttosto falso </label>
+                          <input type="radio" id="af9" name="genere" value="F"/>
+                          <label for="af9"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> L'acquisto online è stato più veloce rispetto ad un acquisto fatto in presenza </strong> <br/> <hr/>
+                        <input type="radio" id="av6" name="genere" value="F"/>
+                        <label for="av6"> Assolutamente vero </label>
+                        <input type="radio" id="pv6" name="genere" value="M"/>
+                        <label for="pv6"> Piuttosto vero </label>
+                        <input type="radio" id="Normale6" name="genere" value="F"/>
+                        <label for="Normale6"> Normale </label>
+                        <input type="radio" id="pf6" name="genere" value="F"/>
+                        <label for="pf6"> Piuttosto falso </label>
+                        <input type="radio" id="af6" name="genere" value="F"/>
+                        <label for="af6"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> Da quando vi è la possibilità, faccio solo acquisti online </strong> <br/> <hr/>
+                        <input type="radio" id="av8" name="genere" value="F"/>
+                        <label for="av8"> Assolutamente vero </label>
+                        <input type="radio" id="pv8" name="genere" value="M"/>
+                        <label for="pv8"> Piuttosto vero </label>
+                        <input type="radio" id="Normale8" name="genere" value="F"/>
+                        <label for="Normale8"> Normale </label>
+                        <input type="radio" id="pf8" name="genere" value="F"/>
+                        <label for="pf8"> Piuttosto falso </label>
+                        <input type="radio" id="af8" name="genere" value="F"/>
+                        <label for="af8"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+                        <Strong> Consiglieresti ad un amico di comprare i nostri libri online </strong> <br/> <hr/>
+                        <input type="radio" id="av7" name="genere" value="F"/>
+                        <label for="av7"> Assolutamente vero </label>
+                        <input type="radio" id="pv7" name="genere" value="M"/>
+                        <label for="pv7"> Piuttosto vero </label>
+                        <input type="radio" id="Normale7" name="genere" value="F"/>
+                        <label for="Normale7"> Normale </label>
+                        <input type="radio" id="pf7" name="genere" value="F"/>
+                        <label for="pf7"> Piuttosto falso </label>
+                        <input type="radio" id="af7" name="genere" value="F"/>
+                        <label for="af7"> Assolutamente falso </label> <hr/> <br/> <br/>
+
+
+                        <input type="submit" class="submit" value="Invia risposte">
+                      </fieldset>
+                    </form>
+                  </article> <br/> <br/> <br/> <br/> <br/>
+                </div>
+
+     <footer>
+       <p>   Segna LIBRO.it è un'iniziativa di <img id="logofooter" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> <br/>
+             Tutti i diritti riservati | Ramona Orsi e Giulia Nebbia | Segna LIBRO.it 2020 © <br/>
+         Contattaci: 012 345678 | Scrivici: ramona.orsi@edu.unito.it , giulia.nebbia@edu.unito.it | Torino, Italia </p>
+     </footer>
+   </body>
+</html>

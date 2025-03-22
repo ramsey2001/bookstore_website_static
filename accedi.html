@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+     <meta charset= "utf-8"/>
+     <meta name="keywords" content="libreria online, libri, libri per univerità, libri scolastici"/>
+     <meta name="description" content="Libreria Online, Sito web di: Segnalibro.it, la tua libreria online"/>
+     <meta name="author" content="Ramona Orsi e Giulia Nebbia"/>
+     <title> Accedi - Segnalibro.it </title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+     <header>
+       <a href="homepage.html" tabindex="1"> <img id="logo" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> </a>
+     </header>
+
+     <nav id="nav1">
+       <ul>
+         <li class="li1"> <a id="last" href="carrello.html" tabindex="2"> <img class="icone" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello"> Carrello </a>
+           <!-- Numero quanti libri nel carrello --> <span class="badge"> 0 </span> </li>
+         <li class="li1"> <a href="assistenza.html" tabindex="3"> <img class="icone" src="immagini/assistenza.svg" alt="assistenza di Segnalibro.it" title="Assistenza"> Assistenza </a> </li>
+         <li class="li1"> <a class="active" href="accedi.html" tabindex="4"> <img class="icone" src="immagini/accedi.svg" alt="accedi di Segnalibro.it" title="Accedi"> Accedi </a> </li>
+       </ul>
+     </nav>
+
+     <br/> <br/> <br/> <br/> <br/> <br/>
+
+     <nav id="nav2">
+       <ul>
+         <li class="li2"> <a href="homepage.html" tabindex="5" title="Home"> Home </a> </li>
+         <li class="li2"> <a href="chisiamo.html" tabindex="6" title="Chi siamo"> Chi siamo </a> </li>
+         <li class="li2"> <a href="contatti.html" tabindex="7" title="Contatti"> Contatti </a> </li>
+         <li class="li2"> <a href="eventi.html" tabindex="8" title="Eventi"> Eventi </a> </li>
+       </ul>
+     </nav> <br/>
+     <img id="sfondoaccedi" src="immagini/accedisfondo.jpg" title="sfondo accedi" alt="sfondoaccedi">
+
+     <div id="background">
+       <br/> <br/> <br/>
+     <article class="accediarticle">
+       <form action="accessocompletato.html" method="post" enctype="text/plain">
+         <fieldset>
+           <legend> <strong> Registrati </strong> </legend>
+           <h5> Se non possiedi un account registrati qui </h5> <hr/>
+
+           <div id="accediform">
+             <label for="nome"> <Strong> Nome <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+             <input type="text" id="nome" placeholder="Inserisci il tuo nome" name="nome" required size="20" maxlength="20"> <br/>
+
+             <label for="cognome"> <Strong> Cognome <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+             <input type="text" id="cognome" placeholder="Inserisci il tuo cognome" name="cognome" required size="20" maxlength="20"> <br/>
+
+             <strong> Genere </strong> <br/>
+
+               <input type="radio" name="sesso" id="sesso_m" value="M">
+               <label for="sesso_m">Maschio</label> <br>
+
+               <input type="radio" name="sesso" id="sesso_f" value="F">
+               <label for="sesso_f">Femmina</label> <br/>
+
+               <label for="età"> <Strong> Scegli la tua età </strong> </label> <br/>
+               <select name="età" id="età">
+                 <option value="-" selected> - </option>
+               <option value="1"> Meno di 18 </option>
+               <option value="1"> Tra i 18 e i 40 </option>
+               <option value="1"> Più di 40 </option>
+               </select> <br/>
+
+           <label for="email"> <Strong> Email <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+           <input type="email" id="email" placeholder="Inserisci Email" name="email" required> <br/>
+
+           <label for="psw"> <strong> Password <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+           <input type="password" id="psw" placeholder="Inserisci Password" name="psw" required> <br/>
+
+           <label for="ripeti"> <strong> Ripeti Password <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+           <input type="password" id="ripeti" placeholder="Ripeti Password" name="ripeti" required>
+
+           <label for="tel"> <strong> Telefono </strong> </label> <br/>
+           <input type="tel" name="tel" id="tel" placeholder="Inserisci numero di telefono"/> <br/>
+
+           <label for="generelibro"> <strong> Scegli il tuo genere preferito </strong> </label>
+           <select name="genere" id="generelibro">
+             <option value="-" selected> - </option>
+             <optgroup label="Autobiografie">
+               <option value="Autobiografie di attori"> Autobiografie di attori </option>
+               <option value="Autobiografie di calciatori"> Autobiografie di calciatori </option>
+             </optgroup>
+             <optgroup label="Commedie">
+               <option value="Commedie rosa"> Commedie rosa </option>
+               <option value="Commedie per famiglie"> Commedie per famiglie </option>
+               <option value="Commedie straniere"> Commedie straniere </option>
+               <option value="Commedie italiane"> Commedie italiane </option>
+             </optgroup>
+             <optgroup label="Romanzi">
+               <option value="Romanzi gialli"> Romanzi gialli </option>
+               <option value="Romanzi psicologici"> Romanzi psicologici </option>
+             </optgroup>
+            </select> <br/> <br/>
+
+           I campi con <span class="campiobbligatori"> * </span> sono obbligatori </div>
+
+<hr/> <p> Creando un account, <br/> accetti la nostra <span id="privacy"> Politica sulla privacy e sui cookie. </span> </p> <br/> <br/>
+
+      <button class="cancella"> Cancella </button>
+      <button class="registrati"> Registrati </button>
+      </fieldset>
+    </form>
+  </article> <br/> <br/> <br/>
+</div>
+
+
+     <footer>
+       <p>   Segna LIBRO.it è un'iniziativa di <img id="logofooter" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> <br/>
+             Tutti i diritti riservati | Ramona Orsi e Giulia Nebbia | Segna LIBRO.it 2020 © <br/>
+         Contattaci: 012 345678 | Scrivici: ramona.orsi@edu.unito.it , giulia.nebbia@edu.unito.it | Torino, Italia </p>
+     </footer>
+   </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+     <meta charset= "utf-8"/>
+     <meta name="keywords" content="libreria online, libri, libri per univerità, libri scolastici"/>
+     <meta name="description" content="Libreria Online, Sito web di: Segnalibro.it, la tua libreria online"/>
+     <meta name="author" content="Ramona Orsi e Giulia Nebbia"/>
+     <title> Carrello - Segnalibro.it </title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+     <header>
+       <a href="homepage.html"> <img id="logo" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> </a>
+     </header>
+
+     <nav id="nav1">
+       <ul>
+         <li class="li1" > <a id="last" class="active" href="carrello.html"> <img class="icone" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello"> Carrello </a>
+           <!-- Numero quanti libri nel carrello --> <span class="badge"> 1 </span> </li>
+         <li class="li1"> <a href="assistenza.html"> <img class="icone" src="immagini/assistenza.svg" alt="assistenza di Segnalibro.it" title="Assistenza"> Assistenza </a> </li>
+         <li class="li1"> <a href="accedi.html"> <img class="icone" src="immagini/accedi.svg" alt="accedi di Segnalibro.it" title="Accedi"> Accedi </a> </li>
+       </ul>
+     </nav>
+
+     <br/> <br/> <br/> <br/> <br/> <br/>
+
+     <nav id="nav2">
+       <ul>
+         <li class="li2"> <a href="homepage.html" title="Home"> Home </a> </li>
+         <li class="li2"> <a href="chisiamo.html" title="Chi siamo"> Chi siamo </a> </li>
+         <li class="li2"> <a href="contatti.html" title="Contatti"> Contatti </a> </li>
+         <li class="li2"> <a href="eventi.html" title="Eventi"> Eventi </a> </li>
+       </ul>
+     </nav> <br/> <br/>
+
+     <section class="carrelloconlibro1">
+       <h2> Carrello </h2>
+       <hr/>
+       <img id="imglibrocarrello" src="immagini/alphatest3.jpg" title="libro nel carrello" alt="libro nel carrello">
+         <div id="prodotticarrello1">
+           <h3> Alpha Test di Psicologia </h3>
+           <p class="autore"> di Alpha Test </p>
+             <img class="recensionecarrello" src="immagini/recensione.svg" title="recensione" alt="recensione">
+          <p class="dispcarrello"> Disponibile <br/> </p> </div>
+
+          <form action="acquisto.html" method="post" enctype="text/plain">
+            <label id="quantità" for="numero"> <strong> Quantità: </strong> </label> <br/>
+          <input type="number" name="numero" id="numero" value="1" min="0" max="20" step="1"/>
+        </form>
+        <a id="bidone" href="carrello.html"> <img src="immagini/bidone.svg" title="bidone" alt="bidone"> <br/> </a>
+     </section> <br/> <br/>
+
+     <section class="carrelloconlibro2">
+       <h2> Riepilogo ordine </h2>
+       <hr/>
+       <p class="riepilogoordine"> Subtotale (1 articolo)	51,30 € <br/>
+         <strong> TOTALE (Provvisorio)	51,30 € </strong> <p>
+       <form action="acquisto.html" method="post" enctype="text/plain">
+         <label for="regalo"> Questo ordine contiene un regalo </label>
+         <input type="checkbox" name="regalo" value="regalo" id="regalo"/>
+         <p> <button id="acquista"> <strong> Acquista </strong> </button> </p>
+         </form>
+     </section> <br/> <br/>
+
+     <article class="vetrinanelcarrello">
+      <h3> <a id="informatica"> SPESSO ACQUISTATI INSIEME </a> </h3>
+      <hr/> <br/> <br/>
+
+      <div class="card">
+        <img class="imgvetrina" src="immagini/alphatest2.jpg" title="libro" alt="libro in vetrina"> <br/> <br/>
+        <p class="titololibro"> <strong> Alpha Test di Economia </strong> </p>
+        <p class="autore"> di Alpha Test </p>
+        <p> L'ultima edizione di questo volume, <br/>
+          aggiornata alle ultime novità introdotte <br/>
+          dal Ministero dell’Università, consente <br/>
+          lo studio e il ripasso mirato di tutte... <br/> </p>
+          <p class="prezzo"> € 43,50 </p>
+          <p class="nondisp"> Non disponibile </p>
+        </div>
+
+          <div class="card">
+            <img class="imgvetrina" src="immagini/informatica3.jpg" title="libro" alt="libro in vetrina"> <br/> <br/>
+            <p class="titololibro"> <strong> HTML 5 e CSS 3 </strong> </p>
+            <p class="autore"> di Gabriele Gigliotti </p>
+            <p> HTML 5 e CSS 3 sono i <br/>
+              linguaggi su cui si baserà <br/>
+              il Web del futuro, ma non c'è <br/>
+              bisogno di aspettare per... <br/> </p>
+              <p class="prezzo"> € 29,00 </p>
+              <p class="nondisp"> Non disponibile </p>
+            </div>
+
+            <div class="card">
+              <a href="libroragazzi.html" title="libro"> <img class="imgvetrina" src="immagini/ragazzi2.jpg" title="libro" alt="libro in vetrina"> <br/> <br/>
+              <p class="titololibro"> <strong> La profezia del flagello. Gregor. Vol. 2 </strong> </p> </a>
+              <p class="autore"> di Suzanne Collins </p>
+              <p class="disp"> Disponibile <br/> </p>
+                <img class="recensione" src="immagini/recensione.svg" title="recensione" alt="recensione">
+                <p class="prezzo"> € 8,50 </p>
+                <form action="carrelloragazzi.html" method="post" enctype="text/plain"> <button class="aggiungialcarrello"> <strong> Aggiungi al carrello </strong> <img class="carrelloimg" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello">
+                </button>
+              </form>
+            </div>
+
+            <div class="card">
+              <a href="librocinema.html" title="libro"> <img class="imgvetrina" src="immagini/cinema3.jpg" title="libro" alt="libro in vetrina"> <br/> <br/>
+              <p class="titololibro"> <strong> Figlio di papà </strong> </p> </a>
+              <p class="autore"> di Christian De Sica </p>
+              <p class="disp"> Disponibile <br/> </p>
+                <img class="recensione" src="immagini/recensione.svg" title="recensione" alt="recensione">
+                <p class="prezzo"> € 30,00 </p>
+                <form action="carrellocinema.html" method="post" enctype="text/plain"> <button class="aggiungialcarrello"> <strong> Aggiungi al carrello </strong> <img class="carrelloimg" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello">
+                </button>
+              </form>
+            </div> <br/>
+
+               <a href="#"> <img src="immagini/frecciasu.svg" title="frecciasu" alt="frecciasu"> </a>
+            </article> <br/> <br/>
+
+
+
+
+     <footer>
+       <p>   Segna LIBRO.it è un'iniziativa di <img id="logofooter" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> <br/>
+             Tutti i diritti riservati | Ramona Orsi e Giulia Nebbia | Segna LIBRO.it 2020 © <br/>
+         Contattaci: 012 345678 | Scrivici: ramona.orsi@edu.unito.it , giulia.nebbia@edu.unito.it | Torino, Italia </p>
+     </footer>
+   </body>
+</html>

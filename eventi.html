@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+     <meta charset= "utf-8"/>
+     <meta name="keywords" content="libreria online, libri, libri per univerità, libri scolastici"/>
+     <meta name="description" content="Libreria Online, Sito web di: Segnalibro.it, la tua libreria online"/>
+     <meta name="author" content="Ramona Orsi e Giulia Nebbia"/>
+     <title> Eventi - Segnalibro.it </title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+     <header>
+       <a href="homepage.html"> <img id="logo" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> </a>
+     </header>
+
+     <nav id="nav1">
+       <ul>
+         <li class="li1"> <a href="carrello.html"> <img class="icone" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello"> Carrello </a>
+           <!-- Numero quanti libri nel carrello --> <span class="badge"> 0 </span> </li>
+         <li class="li1"> <a href="assistenza.html"> <img class="icone" src="immagini/assistenza.svg" alt="assistenza di Segnalibro.it" title="Assistenza"> Assistenza </a> </li>
+         <li class="li1"> <a href="accedi.html"> <img class="icone" src="immagini/accedi.svg" alt="accedi di Segnalibro.it" title="Accedi"> Accedi </a> </li>
+       </ul>
+     </nav>
+
+     <br/> <br/> <br/> <br/> <br/> <br/>
+
+     <nav id="nav2">
+       <ul>
+         <li class="li2"> <a href="homepage.html" title="Home"> Home </a> </li>
+         <li class="li2"> <a href="chisiamo.html" title="Chi siamo"> Chi siamo </a> </li>
+         <li class="li2"> <a href="contatti.html" title="Contatti"> Contatti </a> </li>
+         <li class="li2"> <a class="active" href="eventi.html" title="Eventi"> Eventi </a> </li>
+         <li class="li2">
+       </ul>
+     </nav>
+
+     <div id="contenitore">
+       <video id="eventivideo" autoplay controls poster="immagini/sfondoeventi.svg">
+             <source src="immagini/sfondoeventi.mp4" type="video/mp4">
+             </video>
+
+     <aside class="asideprenota">
+       <form action="prenotazioneok.html" method="post" enctype="text/plain">
+           <h2> Prenota il tuo incontro </h2>
+           <p> Incontra in live o dal vivo i tuoi artisti preferiti </p> <hr/>
+
+           <div id="accediform">
+             <label for="nome"> <Strong> Nome <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+             <input type="text" id="nome" placeholder="Inserisci il tuo nome" name="nome" required size="20" maxlength="20"> <br/>
+
+             <label for="cognome"> <Strong> Cognome <span class="campiobbligatori"> * </span> </strong> </label> <br/>
+             <input type="text" id="cognome" placeholder="Inserisci il tuo cognome" name="cognome" required size="20" maxlength="20"> <br/>
+
+           <label for="email"> Email <span class="campiobbligatori"> * </span> </label> <br/>
+           <input type="email" id="email" placeholder="Inserisci Email" name="email" required> <br/>
+
+           <label for="autori1"> Quale artista vorresti incontrare? <span class="campiobbligatori"> * </span> </label> <br/>
+           <input list="autori" name="autori" id="autori1" required>
+           <datalist id="autori">
+             <option value="Chiara Ferragni">
+               <option value="Cesare Cremonini">
+                 <option value="Massimo Gramellini">
+                   <option value="Christian De Sica">
+                     <option value="Cristina Parodi">
+                       <option value="Luca Argentero">
+                         <option value="Favij">
+                           <option value="The Show">
+                             <option value="Andrea Galeazzi">
+                               <option value="Jakidale">
+                     </datalist> <br/>
+
+           <label for="cittaautori"> Quale città? <span class="campiobbligatori"> * </span> </label> <br/>
+           <select name="genere" id="cittaautori" required>
+             <option value="" selected> - </option>
+             <optgroup label="Marche">
+               <option value="Ancona"> Ancona </option>
+               <option value="Pesaro"> Pesaro </option>
+               <option value="Fano"> Fano </option>
+             </optgroup>
+             <optgroup label="Puglia">
+               <option value="Bari"> Bari </option>
+               <option value="Foggia"> Foggia </option>
+               <option value="Taranto"> Taranto </option>
+             </optgroup>
+             <optgroup label="Liguria">
+               <option value="Genova"> Genova </option>
+               <option value="La Spezia"> La Spezia </option>
+               <option value="Sanremo"> Sanremo </option>
+             </optgroup>
+             <optgroup label="Milano">
+               <option value="Milano"> Milano </option>
+               <option value="Bergamo"> Bergamo </option>
+               <option value="Como"> Como </option>
+             </optgroup>
+             <optgroup label="Lazio">
+               <option value="Roma"> Roma </option>
+               <option value="Latina"> Latina </option>
+             </optgroup>
+             <optgroup label="Piemonte">
+               <option value="Torino"> Torino </option>
+               <option value="Vercelli"> Vercelli </option>
+               <option value="Alba"> Alba </option>
+             </optgroup>
+             <optgroup label="Veneto">
+               <option value="Venezia"> Venezia </option>
+               <option value="Verona"> Verona </option>
+             </optgroup>
+            </select> <br/>
+
+            <label for="data"> Che giorno? <span class="campiobbligatori"> * </span> </label> <br/>
+            <input type="date" name="data" id="data" step="1" min="2021-01-21" max="2022-12-31" required/> <br/>
+
+            <span class="spansafari"> Se sta navigando da browser Safari, le chiediamo di compilare questa casella inserendo la data desiderata in questo formato: "gg/mm/aa" . </span> <br/> <br/>
+
+
+            <label for="ora"> A che ora? <span class="campiobbligatori"> * </span> </label> <br/>
+            <input type="time" name="ora" id="ora" step="1" min="08:00:00" max="20:30:00" required/> <br/>
+
+            <span class="spansafari"> Se sta navigando da browser Safari, le chiediamo di compilare questa casella inserendo la data desiderata in questo formato: "ora:min" . </span> <br/> <br/>
+
+           I campi con <span class="campiobbligatori"> * </span> sono obbligatori </div>
+
+<hr/> <p> Prenotandoti, <br/> accetti la nostra <span id="privacy"> Politica sulla privacy e sui cookie. </span> </p> <br/>
+
+      <button class="prenotati"> Prenota incontro </button>
+    </form>
+  </aside> <br/> <br/> <br/> <br/> <br/> <br/>
+
+  <section>
+    <div class="cardeventi">
+      <img class="fotoautori" src="immagini/ferragni.jpeg" title="ferragni" alt="ferragni"> <br/>
+        <h2 class="testo"> Chiara Ferragni: "Unpost the Hate" in Live </h2> <hr/>
+        <p class="testo"> MAR, 2 MARZO 13:00 - 14:00 </p>
+        <p class="ruolo"> In Streaming sul sito ufficiale dell'autore </p>
+    </div>
+  </section> <br/>
+
+  <section>
+    <div class="cardeventi1">
+       <img class="fotoautori" src="immagini/cremonini.jpg" title="cremonini" alt="cremonini"> <br/>
+       <h2 class="testo"> Cesare Cremonini: live della presentazione del nuovo libro </h2> <hr/>
+       <p class="testo"> VEN, 26 FEBBRAIO 18:00 - 19:00 </p>
+       <p class="ruolo"> In Streaming sul sito ufficiale dell'autore </p>
+    </div>
+  </section>
+
+  <iframe id="videoyteventi" src="https://www.youtube.com/embed/HxoBZ6O07WQ">
+  </iframe>
+
+<br/> <br/> <br/> <br/> <br/>
+     <footer>
+       <p>   Segna LIBRO.it è un'iniziativa di <img id="logofooter" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> <br/>
+             Tutti i diritti riservati | Ramona Orsi e Giulia Nebbia | Segna LIBRO.it 2020 © <br/>
+         Contattaci: 012 345678 | Scrivici: ramona.orsi@edu.unito.it , giulia.nebbia@edu.unito.it | Torino, Italia </p>
+     </footer>
+   </body>
+</html>

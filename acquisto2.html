@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+     <meta charset= "utf-8"/>
+     <meta name="keywords" content="libreria online, libri, libri per univerità, libri scolastici"/>
+     <meta name="description" content="Libreria Online, Sito web di: Segnalibro.it, la tua libreria online"/>
+     <meta name="author" content="Ramona Orsi e Giulia Nebbia"/>
+     <title> Scegli il metodo di pagamento - Segnalibro.it </title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+     <header>
+       <a href="homepage.html" tabindex="1"> <img id="logo" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> </a>
+     </header>
+
+     <nav id="nav1">
+       <ul>
+         <li> <a tabindex="2" id="last" href="carrello.html"> <img class="icone" src="immagini/carrello.svg" alt="carrello di Segnalibro.it" title="Carrello"> Carrello </a>
+           <!-- Numero quanti libri nel carrello --> <span class="badge"> 1 </span> </li>
+         <li> <a tabindex="3" href="assistenza.html"> <img class="icone" src="immagini/assistenza.svg" alt="assistenza di Segnalibro.it" title="Assistenza"> Assistenza </a> </li>
+         <li> <a tabindex="4" href="accedi.html"> <img class="icone" src="immagini/accedi.svg" alt="accedi di Segnalibro.it" title="Accedi"> Accedi </a> </li>
+       </ul>
+     </nav>
+
+     <br/> <br/> <br/> <br/> <br/>
+
+     <p class="breadcrumb"> <a tabindex="5" href="homepage.html" title="Homepage"> Homepage</a> | <a tabindex="6" href="libroinfo.html" title="Descrizione libro"> Descrizione del libro</a> | <a tabindex="7" href="carrello.html" title="Carrello"> Carrello</a> | <a tabindex="8" href="acquisto.html" title="acquisto"> Spedizione</a> | <a tabindex="9" href="acquisto2.html" title="acquisto">  <strong>Pagamento</strong></a>
+
+     <br/>
+
+     <nav class="navacquisto">
+       <ul>
+         <li> <a tabindex="10" href="acquisto.html"> <img class="iconea" src="immagini/1.svg" alt="spedizione" title="Spedizione"> </a> </li>
+         <li> <a tabindex="11" href="acquisto2.html"> <img class="iconea" src="immagini/3.svg" alt="pagamento" title="Pagamento"> </a> </li>
+         <li> <a tabindex="12" href="acquisto3.html"> <img class="iconea" src="immagini/2.svg" alt="conferma" title="Conferma"> </a> </li>
+       </ul>
+       </nav>
+         <hr/> <br/>
+         <nav class="navacquisto">
+           <ul>
+         <li> <a tabindex="13" href="acquisto.html"> Spedizione </a> </li>
+         <li> <a tabindex="14" class="active" href="acquisto2.html"> Pagamento </a> </li>
+         <li> <a tabindex="15" href="acquisto3.html"> Conferma </a> </li>
+       </ul>
+       </nav>
+
+       <br/> <br/>
+
+       <article class="articleacquisto">
+       <h2 class="h2a"> Scegli il metodo di pagamento </h2>
+       <div class="divacq">
+         <fieldset>
+           <legend> Aggiungi un nuovo metodo di pagamento </legend>
+         <form action="acquisto3.html" method="post" enctype="text/plain">
+           <label for="diciottoap"> <Strong> Vuoi utilizzare il saldo 18 app/Carta Docente? </strong> </label> <br/>
+             <input type="checkbox" id="diciottoap" name="diciottoap" value="18APP"/> <img class="acquisticon" src="immagini/18ap.svg" title="18 app" alt="18app"> Saldo disponibile: <strong> 160,89€ </strong> <br/>
+             <hr/> <br/>
+
+               <Strong> Paga con  <span class="campiobbligatori"> * </span> </strong> <br/>
+               <input type="radio" id="carta2" name="carta" value="carta"/> <label for="carta2"> <img class="acquisticon" src="immagini/paypal.svg" title="carta" alt="carta"> </label>
+               <input type="radio" id="carta3" name="carta" value="carta"/> <label for="carta3"> <img class="acquisticon" src="immagini/applepay.svg" title="carta" alt="carta"> </label> <br/> <br/>
+
+
+               <Strong> Registra una nuova carta  <span class="campiobbligatori"> * </span> </strong> <br/>
+               <input type="radio" id="carta" name="carta" value="carta"/> <label for="carta"> <img class="acquisticon" src="immagini/mastercard.svg" title="carta" alt="carta"> </label>
+               <input type="radio" id="carta1" name="carta" value="carta"/> <label for="carta1"> <img class="acquisticon" src="immagini/visa.svg" title="carta" alt="carta"> </label> <br/> <br/>
+
+               <label for="nomea"> <Strong> Nome <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="text" id="nomea" placeholder="Mario" name="nome" required size="20" maxlength="20"> <br/>
+
+               <br/> <label for="cognomea"> <Strong> Cognome <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="text" id="cognomea" placeholder="Rossi" name="cognome" required size="20" maxlength="20"> <br/>
+
+               <br/> <label for="email1"> <Strong> Email <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="email" id="email1" placeholder="Inserisci Email" name="email" required> <br/>
+
+               <br/> <label for="ncarta"> <Strong> Inserisci numero carta di credito <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="text" id="ncarta" placeholder="1111-2222-3333-4444" name="cognome" required size="20" maxlength="16"> <br/>
+
+               <br/> <label for="sc"> <Strong> Scadenza carta <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="text" id="sc" placeholder="Scadenza carta (MM/AA)" name="cognome" required size="20" maxlength="20"> <br/>
+
+               <br/> <label for="cvv"> <Strong> Inserisci CVV <span class="campiobbligatori"> * </span> </strong> </label>
+               <input type="text" id="cvv" placeholder="CVV 123" name="cognome" required size="3" maxlength="3">
+
+           <br/> <br/>
+         I campi con <span class="campiobbligatori"> * </span> sono obbligatori <br/> <br/>
+
+         <input class="invia" type="submit" value="Conferma metodo di pagamento">
+       </form>
+     </fieldset>
+   </div>
+         </article> <br/> <br/>
+
+         <footer>
+           <p>   Segna LIBRO.it è un'iniziativa di <img id="logofooter" src="immagini/logo.svg" alt="logo della pagina web Segnalibro.it" title="Logo di Segnalibro.it"> <br/>
+                 Tutti i diritti riservati | Ramona Orsi e Giulia Nebbia | Segna LIBRO.it 2020 © <br/>
+             Contattaci: 012 345678 | Scrivici: ramona.orsi@edu.unito.it , giulia.nebbia@edu.unito.it | Torino, Italia </p>
+         </footer>
+       </body>
+    </html>
